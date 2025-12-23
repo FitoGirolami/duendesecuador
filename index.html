@@ -86,6 +86,7 @@
     }
     .brand h1{font-size: 16px; margin:0; letter-spacing:.2px;}
     .brand p{margin:0; font-size: 12px; color: var(--soft);}
+
     nav{display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
     nav a{
       font-size: 12px;
@@ -96,6 +97,7 @@
       color: var(--muted);
     }
     nav a:hover{background: rgba(37,99,235,.08); color: var(--text); text-decoration:none;}
+
     main{padding: 18px 0 52px}
     .hero{padding: 22px 0 8px;}
     .hero h2{
@@ -144,6 +146,7 @@
     }
     .card p, .card li{color: var(--muted); font-size: 14.5px}
     .card ul{margin: 10px 0 0; padding-left: 18px}
+
     .note{
       border-left: 3px solid rgba(180,83,9,.75);
       padding: 10px 12px;
@@ -156,6 +159,7 @@
       border-left: 3px solid rgba(4,120,87,.75);
       background: rgba(4,120,87,.06);
     }
+
     section{margin-top: 16px}
     section .section-head{
       display:flex; justify-content:space-between; align-items:flex-end; gap: 12px; flex-wrap:wrap;
@@ -185,6 +189,7 @@
       border-top: 1px solid rgba(15,23,42,.12);
       margin: 14px 0;
     }
+
     .faq details{
       border: 1px solid rgba(15,23,42,.12);
       border-radius: 14px;
@@ -201,6 +206,7 @@
     }
     .faq summary::-webkit-details-marker{display:none}
     .faq .a{padding-top: 8px; color: var(--muted)}
+
     .kbd{
       display:inline-block;
       border: 1px solid rgba(15,23,42,.14);
@@ -211,19 +217,8 @@
       color: var(--muted);
       vertical-align: baseline;
     }
-    footer{
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      padding: 24px 0 36px;
-      background: rgba(255,255,255,.72);
-    }
-    .footer-grid{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 14px;
-    }
-    @media (max-width: 900px){ .footer-grid{grid-template-columns:1fr} }
     .small{font-size: 12px; color: var(--soft)}
+
     .tag{
       display:inline-block;
       padding: 2px 8px;
@@ -236,6 +231,7 @@
     }
     .toc a{display:block; padding: 6px 0; border-bottom: 1px dashed rgba(15,23,42,.14); color: var(--muted)}
     .toc a:last-child{border-bottom:none}
+
     .pill{
       display:inline-block;
       padding: 3px 9px;
@@ -247,6 +243,7 @@
       margin: 0 6px 6px 0;
       white-space: nowrap;
     }
+
     .callout{
       display:flex;
       gap:10px;
@@ -259,6 +256,44 @@
       margin: 10px 0 0;
     }
     .callout strong{color: var(--text)}
+
+    .linkrow{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top: 10px;
+    }
+    .btnlink{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding: 9px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(15,23,42,.12);
+      background: rgba(255,255,255,.86);
+      color: var(--muted);
+      font-size: 13px;
+      text-decoration: none;
+    }
+    .btnlink:hover{
+      background: rgba(37,99,235,.08);
+      color: var(--text);
+      text-decoration:none;
+    }
+
+    footer{
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      padding: 24px 0 36px;
+      background: rgba(255,255,255,.72);
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 14px;
+    }
+    @media (max-width: 900px){ .footer-grid{grid-template-columns:1fr} }
   </style>
 </head>
 
@@ -273,15 +308,20 @@
           <p>Archivo cultural y observatorio del imaginario del duende en Ecuador</p>
         </div>
       </div>
+
       <nav aria-label="Navegación principal">
+        <!-- PÁGINAS ROBUSTAS -->
+        <a href="/banos/">Caso Baños</a>
+        <a href="/fuentes/">Fuentes (DOI)</a>
+        <a href="/glosario/">Glosario</a>
+
+        <!-- ANCLAS DEL INDEX -->
         <a href="#que-es">¿Qué son los duendes?</a>
         <a href="#ecuador">Duendes en Ecuador</a>
         <a href="#fenomeno">Fenómeno contemporáneo</a>
         <a href="#faq">Preguntas frecuentes</a>
         <a href="#origen-banos">Origen en Baños</a>
         <a href="#metodologia">Metodología</a>
-        <a href="#fuentes">Fuentes (DOI)</a>
-        <a href="#glosario">Glosario</a>
       </nav>
     </div>
   </div>
@@ -320,6 +360,7 @@
               <strong>relato</strong> o <strong>narrativa</strong>, no como hecho.
             </p>
           </div>
+
           <div class="callout" aria-label="Pauta de lectura rápida">
             <span class="pill"><strong>Fuente</strong></span>
             <span class="pill"><strong>Fecha</strong></span>
@@ -327,11 +368,25 @@
             <span class="pill"><strong>Consistencia</strong></span>
             <span class="pill"><strong>Contexto</strong></span>
           </div>
+
+          <!-- LINKS A LAS 3 PÁGINAS ROBUSTAS -->
+          <div class="linkrow" aria-label="Accesos a páginas principales">
+            <a class="btnlink" href="/banos/"><strong>↳ Caso Baños</strong> — trazabilidad y contexto</a>
+            <a class="btnlink" href="/fuentes/"><strong>↳ Fuentes (DOI)</strong> — publicaciones citables</a>
+            <a class="btnlink" href="/glosario/"><strong>↳ Glosario</strong> — términos y definiciones</a>
+          </div>
         </div>
       </div>
 
       <aside class="card" aria-label="Tabla de contenidos rápida">
         <div class="pad toc">
+          <h3>Páginas principales</h3>
+          <a href="/banos/">• Caso Baños (página robusta)</a>
+          <a href="/fuentes/">• Fuentes (DOI) (página robusta)</a>
+          <a href="/glosario/">• Glosario (página robusta)</a>
+
+          <hr style="border:none;border-top:1px solid rgba(15,23,42,.12);margin:12px 0" />
+
           <h3>Guía rápida</h3>
           <a href="#que-es">1) ¿Qué son los duendes?</a>
           <a href="#ecuador">2) Duendes en Ecuador: tradición y fuentes</a>
@@ -341,8 +396,8 @@
           <a href="#casos">6) Estudios de caso</a>
           <a href="#origen-banos">7) Origen artístico y trazabilidad en Baños</a>
           <a href="#metodologia">8) Metodología</a>
-          <a href="#fuentes">9) Fuentes (DOI)</a>
-          <a href="#glosario">10) Glosario</a>
+          <a href="#fuentes">9) Fuentes (DOI) (resumen)</a>
+          <a href="#glosario">10) Glosario (resumen)</a>
           <a href="#disclaimer">11) Nota editorial</a>
         </div>
       </aside>
@@ -623,6 +678,11 @@
       <p class="note">
         Este observatorio describe procesos y promueve lectura cultural informada. No reemplaza investigaciones de campo ni archivos locales.
       </p>
+
+      <div class="linkrow" aria-label="Ampliar con páginas robustas">
+        <a class="btnlink" href="/banos/"><strong>Leer el Caso Baños</strong> (página completa)</a>
+        <a class="btnlink" href="/fuentes/"><strong>Ver Fuentes (DOI)</strong></a>
+      </div>
     </div>
   </section>
 
@@ -666,6 +726,10 @@
         En términos culturales, una “fuente primaria” no significa “la única expresión posible”. Significa una referencia que aporta
         <strong>trazabilidad</strong> (quién, cuándo, cómo) y permite reconstruir el origen del símbolo antes de su expansión y repetición.
       </p>
+
+      <div class="linkrow" aria-label="Acceso al caso">
+        <a class="btnlink" href="/banos/"><strong>Ver Caso Baños</strong> (página completa)</a>
+      </div>
 
       <h3>Institucionalidad turística y tensión autoral</h3>
       <p>
@@ -713,6 +777,11 @@
         <li>Crónicas periodísticas verificables.</li>
         <li>Testimonios con contexto (quién, dónde, cuándo; evitando generalizaciones).</li>
       </ul>
+
+      <div class="linkrow" aria-label="Enlaces a páginas de apoyo">
+        <a class="btnlink" href="/fuentes/"><strong>Ver Fuentes (DOI)</strong></a>
+        <a class="btnlink" href="/glosario/"><strong>Ir al Glosario</strong></a>
+      </div>
     </div>
   </section>
 
@@ -741,9 +810,13 @@
       </ul>
 
       <p class="note">
-        Las referencias anteriores se presentan como fuentes documentadas del caso contemporáneo. Otras fuentes académicas y periodísticas pueden sumarse
+        Estas referencias se presentan como fuentes documentadas del caso contemporáneo. Otras fuentes académicas y periodísticas pueden sumarse
         conforme existan publicaciones con metadatos completos y trazables.
       </p>
+
+      <div class="linkrow" aria-label="Página completa de fuentes">
+        <a class="btnlink" href="/fuentes/"><strong>Abrir Fuentes (DOI)</strong> (página robusta)</a>
+      </div>
     </div>
   </section>
 
@@ -762,6 +835,10 @@
       <p><span class="tag">Imaginario cultural</span> Imágenes y relatos que una sociedad usa para entender lo extraño o lo significativo.</p>
       <p><span class="tag">Fuente primaria</span> Registro o espacio con trazabilidad (quién, cuándo, cómo) útil para reconstruir un origen cultural.</p>
       <p><span class="tag">Reconocimiento autoral</span> Atribución explícita de creación y contexto a autores y procesos creativos.</p>
+
+      <div class="linkrow" aria-label="Página completa del glosario">
+        <a class="btnlink" href="/glosario/"><strong>Abrir Glosario</strong> (página robusta)</a>
+      </div>
     </div>
   </section>
 
@@ -794,15 +871,14 @@
       <p class="small">
         Temas: folklore, arte contemporáneo, turismo simbólico, viralización, trazabilidad, estudios de caso, Baños de Agua Santa.
       </p>
+      <p class="small">
+        Páginas: <a href="/banos/">Caso Baños</a> · <a href="/fuentes/">Fuentes (DOI)</a> · <a href="/glosario/">Glosario</a>
+      </p>
     </div>
     <div>
       <strong>Datos del sitio</strong>
-      <p class="small">
-        Dominio: duendesecuador.org
-      </p>
-      <p class="small">
-        Última actualización: <time datetime="2025-12-23">23 de diciembre de 2025</time>
-      </p>
+      <p class="small">Dominio: duendesecuador.org</p>
+      <p class="small">Última actualización: <time datetime="2025-12-23">23 de diciembre de 2025</time></p>
     </div>
   </div>
 </footer>
