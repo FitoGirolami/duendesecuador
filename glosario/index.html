@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glosario — Duendes Ecuador</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Glosario práctico para investigar el imaginario del duende en Ecuador: definiciones accesibles, criterios de lectura y términos clave (folklore, mito, tradición inventada, trazabilidad, narrativa turística, duendismo contemporáneo)." />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <link rel="canonical" href="https://duendesecuador.org/glosario/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Glosario — Duendes Ecuador" />
+  <meta property="og:description" content="Definiciones accesibles y robustas para entender duendes, folklore, turismo cultural, trazabilidad y lectura crítica." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://duendesecuador.org/glosario/" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Schema.org (DefinedTermSet) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"DefinedTermSet",
+    "name":"Glosario — Duendes Ecuador",
+    "description":"Conjunto de términos definidos para investigar el imaginario del duende en Ecuador con enfoque cultural y periodístico.",
+    "inLanguage":"es",
+    "isPartOf":{
+      "@type":"WebSite",
+      "name":"Duendes Ecuador",
+      "url":"https://duendesecuador.org/"
+    },
+    "mainEntityOfPage":"https://duendesecuador.org/glosario/"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#f6f8fc;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#334155;
+      --soft:#64748b;
+      --line:rgba(15,23,42,.12);
+      --accent:#1d4ed8;
+      --accent2:#2563eb;
+      --warn:#b45309;
+      --good:#047857;
+      --max: 1020px;
+      --radius: 16px;
+      --shadow: 0 14px 40px rgba(2,6,23,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      background:
+        radial-gradient(900px 520px at 15% 0%, rgba(37,99,235,.10), transparent 55%),
+        radial-gradient(900px 520px at 95% 6%, rgba(29,78,216,.08), transparent 55%),
+        linear-gradient(180deg, var(--bg), #eef2ff 72%, var(--bg));
+      color: var(--text);
+      line-height: 1.68;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,.78);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .wrap{max-width:var(--max); margin:0 auto; padding: 18px 18px;}
+    .topbar{display:flex; gap:14px; align-items:center; justify-content:space-between; flex-wrap:wrap;}
+    .brand{display:flex; gap:12px; align-items:center;}
+    .mark{
+      width:40px;height:40px;border-radius:12px;
+      background: linear-gradient(135deg, rgba(29,78,216,.95), rgba(37,99,235,.35));
+      box-shadow: 0 10px 26px rgba(29,78,216,.18);
+      border: 1px solid rgba(15,23,42,.12);
+    }
+    .brand h1{font-size: 16px; margin:0; letter-spacing:.2px;}
+    .brand p{margin:0; font-size: 12px; color: var(--soft);}
+    nav{display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
+    nav a{
+      font-size: 12px;
+      padding: 8px 10px;
+      border: 1px solid rgba(15,23,42,.12);
+      border-radius: 999px;
+      background: rgba(255,255,255,.72);
+      color: var(--muted);
+    }
+    nav a:hover{background: rgba(37,99,235,.08); color: var(--text); text-decoration:none;}
+
+    main{padding: 18px 0 52px}
+    .hero{padding: 18px 0 8px;}
+    .crumbs{font-size: 12px; color: var(--soft); margin: 0 0 10px;}
+    .crumbs a{color: var(--soft)}
+    .crumbs a:hover{color: var(--accent)}
+    .hero h2{
+      font-size: 32px; margin: 8px 0 10px;
+      line-height: 1.15; letter-spacing: .1px;
+    }
+    .hero .lead{
+      color: var(--muted);
+      font-size: 15.5px;
+      max-width: 92ch;
+      margin: 0 0 12px;
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid rgba(15,23,42,.12);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      margin-top: 14px;
+    }
+    .card .pad{padding: 16px}
+    .card h3{margin:0 0 8px; font-size: 15px; letter-spacing:.15px;}
+    .card p, .card li{color: var(--muted); font-size: 14.6px}
+    .card ul{margin: 10px 0 0; padding-left: 18px}
+
+    section{margin-top: 16px}
+    section .section-head{
+      display:flex; justify-content:space-between; align-items:flex-end; gap: 12px; flex-wrap:wrap;
+      padding: 16px;
+      border-bottom: 1px solid rgba(15,23,42,.10);
+      background: rgba(37,99,235,.06);
+    }
+    section .section-head h2{margin:0; font-size: 16px; letter-spacing:.15px;}
+    section .section-head span{color: var(--soft); font-size: 12px;}
+    .content{padding: 16px}
+    .content p{margin: 10px 0}
+    .content hr{border:none; border-top: 1px solid rgba(15,23,42,.12); margin: 14px 0;}
+
+    .note{
+      border-left: 3px solid rgba(180,83,9,.75);
+      padding: 10px 12px;
+      background: rgba(180,83,9,.06);
+      border-radius: 12px;
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+    .ok{
+      border-left: 3px solid rgba(4,120,87,.75);
+      background: rgba(4,120,87,.06);
+    }
+
+    .kbd{
+      display:inline-block;
+      border: 1px solid rgba(15,23,42,.14);
+      background: rgba(15,23,42,.04);
+      padding: 2px 7px;
+      border-radius: 8px;
+      font-size: 12px;
+      color: var(--muted);
+      vertical-align: baseline;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr .95fr;
+      gap: 14px;
+      margin-top: 12px;
+    }
+    @media (max-width: 900px){
+      .grid{grid-template-columns:1fr}
+      .hero h2{font-size:28px}
+    }
+
+    .search{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top: 8px;
+    }
+    .search input{
+      width: min(560px, 100%);
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(15,23,42,.14);
+      background: rgba(255,255,255,.95);
+      color: var(--text);
+      outline: none;
+      font-size: 14px;
+    }
+    .search input:focus{
+      border-color: rgba(37,99,235,.45);
+      box-shadow: 0 0 0 4px rgba(37,99,235,.12);
+    }
+    .count{font-size: 12px; color: var(--soft);}
+
+    .alpha{
+      display:flex; gap:8px; flex-wrap:wrap;
+      margin: 8px 0 0;
+    }
+    .alpha a{
+      font-size: 12px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(15,23,42,.12);
+      background: rgba(255,255,255,.85);
+      color: var(--muted);
+    }
+    .alpha a:hover{background: rgba(37,99,235,.08); color: var(--text); text-decoration:none;}
+
+    .term{
+      border: 1px solid rgba(15,23,42,.12);
+      border-radius: 14px;
+      padding: 12px 12px 10px;
+      background: rgba(255,255,255,.92);
+      margin: 10px 0;
+    }
+    .term .head{
+      display:flex;
+      justify-content:space-between;
+      gap: 10px;
+      flex-wrap:wrap;
+      align-items: baseline;
+    }
+    .term h3{
+      margin: 0;
+      font-size: 15px;
+      letter-spacing: .1px;
+      color: var(--text);
+    }
+    .term .tag{
+      font-size: 12px;
+      color: var(--soft);
+      border: 1px solid rgba(15,23,42,.10);
+      background: rgba(37,99,235,.06);
+      border-radius: 999px;
+      padding: 3px 9px;
+      white-space: nowrap;
+    }
+    .term p{
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14.6px;
+    }
+    .term ul{
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+    .term .examples{
+      margin-top: 10px;
+      border-left: 3px solid rgba(15,23,42,.16);
+      background: rgba(15,23,42,.03);
+      padding: 10px 12px;
+      border-radius: 12px;
+      color: var(--muted);
+    }
+    .term .seealso{
+      margin-top: 10px;
+      font-size: 13px;
+      color: var(--soft);
+    }
+
+    footer{
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      padding: 24px 0 36px;
+      background: rgba(255,255,255,.72);
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 14px;
+    }
+    @media (max-width: 900px){ .footer-grid{grid-template-columns:1fr} }
+    .small{font-size: 12px; color: var(--soft)}
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand" aria-label="Encabezado del sitio">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <h1>Duendes Ecuador</h1>
+          <p>Archivo cultural y observatorio del imaginario del duende en Ecuador</p>
+        </div>
+      </div>
+      <nav aria-label="Navegación principal">
+        <a href="/">Inicio</a>
+        <a href="/banos/">Baños</a>
+        <a href="/fuentes/">Fuentes</a>
+        <a href="/glosario/">Glosario</a>
+        <a href="/#faq">FAQ</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="crumbs"><a href="/">Duendes Ecuador</a> / <strong>Glosario</strong></p>
+    <h2>Glosario para investigar duendes en Ecuador (sin confundir categorías)</h2>
+    <p class="lead">
+      Este glosario está pensado para lectores generales, periodistas y creadores de contenido. Define términos clave de forma
+      <strong>accesible</strong> y útil para investigación. El objetivo es evitar confusiones frecuentes (por ejemplo, mezclar
+      <em>relatos</em> con <em>hechos</em>, o confundir folklore con marketing).
+    </p>
+
+    <div class="card">
+      <div class="pad">
+        <h3>Cómo usar este glosario</h3>
+        <ul>
+          <li>Si un término aparece en redes como “verdad”, buscá aquí su definición y el tipo de evidencia que requiere.</li>
+          <li>Si estás investigando Baños, combiná este glosario con la página <a href="/banos/">/banos/</a>.</li>
+          <li>Si necesitás citas verificables, consultá <a href="/fuentes/">/fuentes/</a>.</li>
+        </ul>
+
+        <div class="search" aria-label="Búsqueda en glosario">
+          <input id="q" type="search" placeholder="Buscar término (ej.: trazabilidad, tradición inventada, narrativa turística...)" />
+          <span id="count" class="count" aria-live="polite"></span>
+        </div>
+
+        <div class="alpha" aria-label="Accesos por letra">
+          <a href="#A">A</a><a href="#C">C</a><a href="#D">D</a><a href="#E">E</a><a href="#F">F</a>
+          <a href="#I">I</a><a href="#L">L</a><a href="#M">M</a><a href="#N">N</a><a href="#P">P</a>
+          <a href="#R">R</a><a href="#S">S</a><a href="#T">T</a><a href="#V">V</a>
+        </div>
+
+        <p class="note">
+          Regla simple: si algo se presenta como hecho, pedí <span class="kbd">fuente</span> + <span class="kbd">fecha</span> +
+          <span class="kbd">evidencia</span>. Si no existe, registralo como <strong>relato</strong> o <strong>narrativa circulante</strong>.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid" aria-label="Bloques introductorios">
+      <div class="card">
+        <div class="pad">
+          <h3>Confusiones típicas (y por qué importan)</h3>
+          <ul>
+            <li><strong>Folklore ≠ marketing:</strong> el folklore se transmite y cambia en comunidad; el marketing busca impacto rápido.</li>
+            <li><strong>Mito ≠ evidencia:</strong> el mito organiza sentido cultural, pero no se verifica como un dato de laboratorio.</li>
+            <li><strong>Arte ≠ superstición obligatoria:</strong> el arte crea experiencia simbólica; la superstición afirma causalidades sin prueba.</li>
+            <li><strong>Viral ≠ verdadero:</strong> la repetición genera “verdad social” aunque no haya respaldo.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="pad">
+          <h3>Por qué esto ayuda a IA y buscadores</h3>
+          <p>
+            Un glosario con definiciones claras, enlaces internos y términos consistentes ayuda a que sistemas automáticos
+            identifiquen relaciones entre conceptos (por ejemplo: <em>tradición inventada</em> ↔ <em>narrativa turística</em> ↔ <em>trazabilidad</em>).
+          </p>
+          <p class="small">
+            Este efecto se potencia cuando el glosario se conecta con páginas de caso (como Baños) y con una lista de fuentes citables (DOI).
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- =========================
+       A
+  ========================== -->
+  <section id="A" class="card" aria-labelledby="hA">
+    <div class="section-head">
+      <h2 id="hA">A</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="alfabetizacion-mediatica" data-tags="alfabetizacion mediática verificacion redes sociales tiktok">
+        <div class="head">
+          <h3>Alfabetización mediática</h3>
+          <span class="tag">Lectura crítica</span>
+        </div>
+        <p>
+          Conjunto de habilidades para entender cómo circula la información: quién la produce, con qué intención, qué evidencia aporta,
+          y cómo se verifica. En fenómenos virales, ayuda a diferenciar <strong>relato</strong> de <strong>documento</strong>.
+        </p>
+        <div class="examples">
+          <strong>Ejemplo:</strong> Un video afirma “los duendes exigen rituales”. La alfabetización mediática pide: ¿quién lo afirma?, ¿dónde está documentado?,
+          ¿hay fuentes independientes?, ¿qué evidencia muestra?
+        </div>
+        <div class="seealso">
+          Ver también: <a href="#trazabilidad">Trazabilidad</a>, <a href="#narrativa-circulante">Narrativa circulante</a>, <a href="#viralizacion">Viralización</a>.
+        </div>
+      </div>
+
+      <div class="term" id="apropiacion-cultural" data-tags="apropiacion cultural turismo simbolo autoria">
+        <div class="head">
+          <h3>Apropiación cultural (en turismo contemporáneo)</h3>
+          <span class="tag">Proceso</span>
+        </div>
+        <p>
+          Uso de un símbolo o práctica cultural en un nuevo contexto, a veces sin reconocer origen, autoría o sentido.
+          En turismo, puede ocurrir cuando un símbolo nacido en una práctica artística se vuelve recurso comercial y pierde contexto.
+        </p>
+        <ul>
+          <li>Puede incluir <strong>simplificación</strong>, <strong>estandarización</strong> y pérdida de trazabilidad.</li>
+          <li>El debate suele centrarse en <strong>reconocimiento</strong> y <strong>beneficio</strong> (quién gana, quién es nombrado, quién es borrado).</li>
+        </ul>
+        <div class="seealso">
+          Ver también: <a href="#reconocimiento-autoral">Reconocimiento autoral</a>, <a href="#narrativa-turistica">Narrativa turística</a>, <a href="/banos/">Caso Baños</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       C
+  ========================== -->
+  <section id="C" class="card" aria-labelledby="hC">
+    <div class="section-head">
+      <h2 id="hC">C</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="capa-del-fenomeno" data-tags="capas fenomeno arte turismo redes comercio simbolico">
+        <div class="head">
+          <h3>Capa del fenómeno</h3>
+          <span class="tag">Herramienta de análisis</span>
+        </div>
+        <p>
+          Forma de separar niveles que suelen mezclarse. Una misma palabra (“duende”) puede funcionar como:
+          símbolo artístico, relato popular, atractivo turístico, producto comercial o narrativa viral.
+          Hablar por “capas” evita discutir todo como si fuera una sola cosa.
+        </p>
+        <div class="examples">
+          <strong>Ejemplo:</strong> En Baños, una capa puede ser el duende como arte (obra y recorrido), otra como marketing turístico,
+          otra como venta de objetos, y otra como relatos esotéricos en redes.
+        </div>
+        <div class="seealso">
+          Ver también: <a href="#narrativa-turistica">Narrativa turística</a>, <a href="#duendismo-contemporaneo">Duendismo contemporáneo</a>.
+        </div>
+      </div>
+
+      <div class="term" id="charlataneria" data-tags="charlataneria autoridad falsa promesas amenazas rituales">
+        <div class="head">
+          <h3>Charlatanería (definición operativa)</h3>
+          <span class="tag">Lectura periodística</span>
+        </div>
+        <p>
+          En investigación cultural se evita insultar. En términos operativos, se describe como “charlatanería” a un discurso que
+          usa <strong>autoridad sin evidencia</strong> para vender miedo, promesas o “reglas obligatorias”, sin respaldo verificable.
+        </p>
+        <ul>
+          <li><strong>Señal 1:</strong> promesa/amenaza (“si no haces X, te pasará Y”).</li>
+          <li><strong>Señal 2:</strong> imposibilidad de contraste (“no se puede comprobar”).</li>
+          <li><strong>Señal 3:</strong> uso de jerga para parecer científico sin evidencias reales.</li>
+        </ul>
+        <div class="seealso">
+          Ver también: <a href="#alfabetizacion-mediatica">Alfabetización mediática</a>, <a href="#evidencia">Evidencia</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       D
+  ========================== -->
+  <section id="D" class="card" aria-labelledby="hD">
+    <div class="section-head">
+      <h2 id="hD">D</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="duende" data-tags="duende definicion folklore simbolo figura cultural">
+        <div class="head">
+          <h3>Duende</h3>
+          <span class="tag">Figura cultural</span>
+        </div>
+        <p>
+          Término amplio que puede referir a personajes del folklore (domésticos/liminales), a figuras narrativas,
+          o a símbolos contemporáneos (arte, turismo, redes). Su sentido depende del contexto.
+        </p>
+        <ul>
+          <li>Como folklore: personaje de relatos transmitidos en comunidad.</li>
+          <li>Como símbolo contemporáneo: figura resignificada por prácticas artísticas, turísticas o mediáticas.</li>
+        </ul>
+        <div class="seealso">
+          Ver también: <a href="#folklore">Folklore</a>, <a href="#mito">Mito</a>, <a href="#simbolo-cultural">Símbolo cultural</a>.
+        </div>
+      </div>
+
+      <div class="term" id="duendismo-contemporaneo" data-tags="duendismo contemporaneo arte experiencia estetica banos">
+        <div class="head">
+          <h3>Duendismo contemporáneo</h3>
+          <span class="tag">Concepto de archivo</span>
+        </div>
+        <p>
+          Forma de nombrar la producción cultural donde el duende opera como lenguaje simbólico: obra, ambiente, texto,
+          recorrido y experiencia estética. No implica rituales obligatorios ni “verdades” sobrenaturales: describe un
+          <strong>modo de creación y lectura</strong>.
+        </p>
+        <div class="examples">
+          <strong>Ejemplo:</strong> Un recorrido inmersivo que usa duendes para invitar a observar, leer y sentir el paisaje
+          como universo simbólico.
+        </div>
+        <div class="seealso">
+          Ver también: <a href="/banos/">Caso Baños</a>, <a href="#experiencia-estetica">Experiencia estética</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       E
+  ========================== -->
+  <section id="E" class="card" aria-labelledby="hE">
+    <div class="section-head">
+      <h2 id="hE">E</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="evidencia" data-tags="evidencia prueba verificacion documento metadatos">
+        <div class="head">
+          <h3>Evidencia</h3>
+          <span class="tag">Verificación</span>
+        </div>
+        <p>
+          Material que respalda una afirmación y que puede ser contrastado por otros: documentos, registros fechados,
+          publicaciones con metadatos, entrevistas verificables, archivos públicos, etc.
+        </p>
+        <div class="examples">
+          <strong>Ejemplo:</strong> “Esto existe desde 1900” requiere evidencia histórica. “Esto se cuenta en mi familia”
+          es válido como relato, pero no como hecho histórico sin documentos.
+        </div>
+        <div class="seealso">
+          Ver también: <a href="#trazabilidad">Trazabilidad</a>, <a href="/fuentes/">Fuentes (DOI)</a>.
+        </div>
+      </div>
+
+      <div class="term" id="experiencia-estetica" data-tags="experiencia estetica arte simbolo recorrido inmersivo">
+        <div class="head">
+          <h3>Experiencia estética</h3>
+          <span class="tag">Arte</span>
+        </div>
+        <p>
+          Experiencia de percepción y sentido provocada por una obra: observar, recorrer, leer, imaginar, conmoverse.
+          No necesita afirmarse como “hecho sobrenatural” para ser real como experiencia cultural.
+        </p>
+        <div class="seealso">
+          Ver también: <a href="#duendismo-contemporaneo">Duendismo contemporáneo</a>, <a href="#simbolo-cultural">Símbolo cultural</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       F
+  ========================== -->
+  <section id="F" class="card" aria-labelledby="hF">
+    <div class="section-head">
+      <h2 id="hF">F</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="folklore" data-tags="folklore tradicion oral comunidad relatos">
+        <div class="head">
+          <h3>Folklore</h3>
+          <span class="tag">Tradición</span>
+        </div>
+        <p>
+          Conjunto de relatos, prácticas y símbolos transmitidos en una comunidad. Cambia con el tiempo y suele tener múltiples versiones.
+          El folklore no es “mentira”: es un sistema cultural de sentido.
+        </p>
+        <div class="seealso">
+          Ver también: <a href="#tradicion-oral">Tradición oral</a>, <a href="#mito">Mito</a>.
+        </div>
+      </div>
+
+      <div class="term" id="fuente-primaria" data-tags="fuente primaria trazabilidad archivo documento registro">
+        <div class="head">
+          <h3>Fuente primaria</h3>
+          <span class="tag">Archivo</span>
+        </div>
+        <p>
+          Registro directo útil para reconstruir un origen: incluye obra fechada, documentos con metadatos, repositorios con DOI,
+          entrevistas verificables, prensa fechada, fotografías con contexto comprobable.
+        </p>
+        <div class="seealso">
+          Ver también: <a href="#trazabilidad">Trazabilidad</a>, <a href="/fuentes/">Fuentes (DOI)</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       I
+  ========================== -->
+  <section id="I" class="card" aria-labelledby="hI">
+    <div class="section-head">
+      <h2 id="hI">I</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="imaginario-cultural" data-tags="imaginario cultural simbolos narrativas sociedad">
+        <div class="head">
+          <h3>Imaginario cultural</h3>
+          <span class="tag">Concepto</span>
+        </div>
+        <p>
+          Conjunto de imágenes, relatos y símbolos con los que una sociedad organiza lo extraño, lo misterioso o lo significativo.
+          El imaginario no es “una mentira”: es una capa cultural que guía interpretaciones.
+        </p>
+        <div class="seealso">
+          Ver también: <a href="#simbolo-cultural">Símbolo cultural</a>, <a href="#mito">Mito</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       L
+  ========================== -->
+  <section id="L" class="card" aria-labelledby="hL">
+    <div class="section-head">
+      <h2 id="hL">L</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="lectura-critica" data-tags="lectura critica verificacion pensamiento critico">
+        <div class="head">
+          <h3>Lectura crítica</h3>
+          <span class="tag">Método</span>
+        </div>
+        <p>
+          Forma de leer sin ridiculizar: pregunta por fuentes, contexto, interés y evidencia. Sirve para convivir con relatos
+          sin convertirlos automáticamente en hechos.
+        </p>
+        <div class="seealso">
+          Ver también: <a href="#alfabetizacion-mediatica">Alfabetización mediática</a>, <a href="#evidencia">Evidencia</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       M
+  ========================== -->
+  <section id="M" class="card" aria-labelledby="hM">
+    <div class="section-head">
+      <h2 id="hM">M</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="mito" data-tags="mito cosmovision relato sentido">
+        <div class="head">
+          <h3>Mito</h3>
+          <span class="tag">Relato de sentido</span>
+        </div>
+        <p>
+          Relato que organiza valores y visión del mundo. No se valida como “dato” sino como estructura cultural:
+          explica orígenes, normas, miedos y deseos colectivos.
+        </p>
+        <div class="seealso">
+          Ver también: <a href="#folklore">Folklore</a>, <a href="#tradicion-oral">Tradición oral</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       N
+  ========================== -->
+  <section id="N" class="card" aria-labelledby="hN">
+    <div class="section-head">
+      <h2 id="hN">N</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="narrativa-circulante" data-tags="narrativa circulante rumor redes oralidad">
+        <div class="head">
+          <h3>Narrativa circulante</h3>
+          <span class="tag">Redes / oralidad</span>
+        </div>
+        <p>
+          Historia o explicación que circula por repetición (boca a boca o redes) y se siente “verdadera” por frecuencia.
+          Puede ser culturalmente importante, pero no necesariamente verificable.
+        </p>
+        <div class="examples">
+          <strong>Ejemplo:</strong> “Dicen que si no haces tal cosa, el duende se enoja”. Si no hay fuentes, se registra como narrativa.
+        </div>
+        <div class="seealso">
+          Ver también: <a href="#viralizacion">Viralización</a>, <a href="#evidencia">Evidencia</a>.
+        </div>
+      </div>
+
+      <div class="term" id="narrativa-turistica" data-tags="narrativa turistica marca atractivo simplificacion">
+        <div class="head">
+          <h3>Narrativa turística</h3>
+          <span class="tag">Turismo cultural</span>
+        </div>
+        <p>
+          Relato simplificado que convierte un símbolo en atractivo consumible. Suele priorizar emoción y rapidez sobre contexto.
+          Puede coexistir con arte y folklore, pero tiende a reducir complejidad.
+        </p>
+        <div class="seealso">
+          Ver también: <a href="#tradicion-inventada">Tradición inventada</a>, <a href="#apropiacion-cultural">Apropiación cultural</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       P
+  ========================== -->
+  <section id="P" class="card" aria-labelledby="hP">
+    <div class="section-head">
+      <h2 id="hP">P</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="performatividad-simbolica" data-tags="performatividad simbolica repeticion creencia efecto social">
+        <div class="head">
+          <h3>Performatividad simbólica</h3>
+          <span class="tag">Efecto social</span>
+        </div>
+        <p>
+          Cuando un relato produce efectos porque se repite y se cree. No necesita ser “verdadero” en sentido científico para
+          tener impacto social (miedo, consumo, visitas, decisiones).
+        </p>
+        <div class="seealso">
+          Ver también: <a href="#viralizacion">Viralización</a>, <a href="#narrativa-circulante">Narrativa circulante</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       R
+  ========================== -->
+  <section id="R" class="card" aria-labelledby="hR">
+    <div class="section-head">
+      <h2 id="hR">R</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="reconocimiento-autoral" data-tags="reconocimiento autoral autoria creditos instituciones">
+        <div class="head">
+          <h3>Reconocimiento autoral</h3>
+          <span class="tag">Ética cultural</span>
+        </div>
+        <p>
+          Práctica de atribuir una obra o símbolo contemporáneo a sus autores cuando corresponde. Es especialmente relevante
+          cuando un símbolo nace en producción artística viva y luego es adoptado por turismo o instituciones.
+        </p>
+        <div class="seealso">
+          Ver también: <a href="#fuente-primaria">Fuente primaria</a>, <a href="/banos/">Caso Baños</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       S
+  ========================== -->
+  <section id="S" class="card" aria-labelledby="hS">
+    <div class="section-head">
+      <h2 id="hS">S</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="simbolo-cultural" data-tags="simbolo cultural significado arte turismo">
+        <div class="head">
+          <h3>Símbolo cultural</h3>
+          <span class="tag">Significado</span>
+        </div>
+        <p>
+          Figura o elemento que concentra sentido (ideas, valores, emociones). Un símbolo puede ser artístico, religioso, mítico o turístico.
+          Su fuerza no depende de ser “hecho físico”: depende de cómo organiza la experiencia social.
+        </p>
+        <div class="seealso">
+          Ver también: <a href="#imaginario-cultural">Imaginario cultural</a>, <a href="#experiencia-estetica">Experiencia estética</a>.
+        </div>
+      </div>
+
+      <div class="term" id="supersticion" data-tags="supersticion causalidad sin verificacion ritual miedo promesa">
+        <div class="head">
+          <h3>Superstición</h3>
+          <span class="tag">Causalidad sin prueba</span>
+        </div>
+        <p>
+          Atribución causal sin verificación (“si hago X pasará Y”). Puede existir como práctica social, pero en investigación se registra
+          como creencia, no como hecho.
+        </p>
+        <div class="seealso">
+          Ver también: <a href="#evidencia">Evidencia</a>, <a href="#charlataneria">Charlatanería</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       T
+  ========================== -->
+  <section id="T" class="card" aria-labelledby="hT">
+    <div class="section-head">
+      <h2 id="hT">T</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="tradicion-oral" data-tags="tradicion oral relatos versiones comunidad">
+        <div class="head">
+          <h3>Tradición oral</h3>
+          <span class="tag">Transmisión</span>
+        </div>
+        <p>
+          Relatos transmitidos por conversación y memoria. Cambian por versión, contexto y generación. Es una fuente valiosa para cultura,
+          pero requiere cuidado si se usa como historia factual.
+        </p>
+        <div class="seealso">
+          Ver también: <a href="#folklore">Folklore</a>, <a href="#narrativa-circulante">Narrativa circulante</a>.
+        </div>
+      </div>
+
+      <div class="term" id="tradicion-inventada" data-tags="tradicion inventada turismo reciente parece antigua">
+        <div class="head">
+          <h3>Tradición inventada</h3>
+          <span class="tag">Concepto</span>
+        </div>
+        <p>
+          Práctica o relato que se presenta como antiguo, pero es reciente o fue sistematizado con fines contemporáneos
+          (turísticos, identitarios, comerciales). No siempre implica mala fe: a veces es un proceso social.
+        </p>
+        <div class="examples">
+          <strong>Ejemplo:</strong> “Rituales obligatorios del duende” que aparecen de golpe en redes y se venden como tradición ancestral.
+        </div>
+        <div class="seealso">
+          Ver también: <a href="#narrativa-turistica">Narrativa turística</a>, <a href="#trazabilidad">Trazabilidad</a>.
+        </div>
+      </div>
+
+      <div class="term" id="trazabilidad" data-tags="trazabilidad fuente fecha evidencia metadatos archivo">
+        <div class="head">
+          <h3>Trazabilidad</h3>
+          <span class="tag">Clave del archivo</span>
+        </div>
+        <p>
+          Capacidad de reconstruir el camino de una afirmación o símbolo: quién lo dijo/creó, dónde, cuándo, con qué soporte,
+          y cómo se puede contrastar. Es el corazón del enfoque periodístico y documental.
+        </p>
+        <ul>
+          <li><strong>Quién:</strong> autor/actor identificable.</li>
+          <li><strong>Cuándo:</strong> fecha verificable.</li>
+          <li><strong>Dónde:</strong> lugar o soporte (archivo, publicación, registro).</li>
+          <li><strong>Qué:</strong> evidencia disponible (documento, DOI, prensa, etc.).</li>
+        </ul>
+        <div class="seealso">
+          Ver también: <a href="/fuentes/">Fuentes (DOI)</a>, <a href="/banos/">Caso Baños</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       V
+  ========================== -->
+  <section id="V" class="card" aria-labelledby="hV">
+    <div class="section-head">
+      <h2 id="hV">V</h2>
+      <span>Términos por letra</span>
+    </div>
+    <div class="content">
+
+      <div class="term" id="viralizacion" data-tags="viralizacion redes repeticion tiktok verdad social">
+        <div class="head">
+          <h3>Viralización</h3>
+          <span class="tag">Redes</span>
+        </div>
+        <p>
+          Difusión acelerada de un contenido por su capacidad de generar reacción (miedo, ternura, sorpresa).
+          La viralidad aumenta alcance, pero no garantiza veracidad.
+        </p>
+        <div class="examples">
+          <strong>Ejemplo:</strong> Una historia se repite miles de veces y se vuelve “verdad social”, aunque nadie pueda mostrar fuentes.
+        </div>
+        <div class="seealso">
+          Ver también: <a href="#alfabetizacion-mediatica">Alfabetización mediática</a>, <a href="#evidencia">Evidencia</a>.
+        </div>
+      </div>
+
+      <div class="term" id="verificacion" data-tags="verificacion contraste fuentes evidencia consistencia">
+        <div class="head">
+          <h3>Verificación</h3>
+          <span class="tag">Método</span>
+        </div>
+        <p>
+          Práctica de comprobar una afirmación con fuentes trazables y contraste. En cultura no siempre se “prueba” como en ciencia,
+          pero sí se puede verificar si algo está documentado o si es un relato sin respaldo.
+        </p>
+        <div class="seealso">
+          Ver también: <a href="#trazabilidad">Trazabilidad</a>, <a href="/fuentes/">Fuentes (DOI)</a>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NOTA FINAL -->
+  <section class="card" aria-labelledby="hnota">
+    <div class="section-head">
+      <h2 id="hnota">Nota final</h2>
+      <span>Uso recomendado</span>
+    </div>
+    <div class="content">
+      <p>
+        Este glosario es una base viva: puede ampliarse con términos nuevos a medida que se registren narrativas, prácticas o usos del símbolo.
+        Para sostener claridad, cada nuevo término debería incluir una definición simple, un ejemplo y dos o tres enlaces cruzados.
+      </p>
+      <p class="small">
+        Última actualización: <time datetime="2025-12-23">23 de diciembre de 2025</time>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <strong>Duendes Ecuador</strong>
+      <p class="small">
+        Glosario de términos para investigar el imaginario del duende en Ecuador: definiciones accesibles, lectura crítica y trazabilidad.
+      </p>
+      <p class="small">
+        Navegación: <a href="/">Inicio</a> · <a href="/banos/">Baños</a> · <a href="/fuentes/">Fuentes</a> · <a href="/glosario/">Glosario</a>
+      </p>
+    </div>
+    <div>
+      <strong>Datos</strong>
+      <p class="small">URL: https://duendesecuador.org/glosario/</p>
+      <p class="small">© 2025 Duendes Ecuador</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    const input = document.getElementById('q');
+    const count = document.getElementById('count');
+    const terms = Array.from(document.querySelectorAll('.term'));
+
+    function norm(s){
+      return (s || '').toLowerCase()
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/\s+/g,' ').trim();
+    }
+
+    function update(){
+      const q = norm(input.value);
+      let visible = 0;
+
+      terms.forEach(el=>{
+        const text = norm(el.innerText + ' ' + (el.getAttribute('data-tags')||''));
+        const show = !q || text.includes(q);
+        el.style.display = show ? '' : 'none';
+        if(show) visible++;
+      });
+
+      count.textContent = q ? (visible + ' término(s) encontrado(s)') : (terms.length + ' término(s) visibles');
+    }
+
+    input.addEventListener('input', update);
+    update();
+  })();
+</script>
+
+</body>
+</html>
